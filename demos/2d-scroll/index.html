@@ -13,7 +13,7 @@
 var myScroll;
 
 function loaded () {
-	myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+	myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true, scrollY:false });
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -132,7 +132,7 @@ p {
 	</div>
 </div>
 
-<div id="footer"></div>
+<div id="footer">Pie de página</div>
 
 </body>
 </html>

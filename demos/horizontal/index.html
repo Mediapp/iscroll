@@ -74,8 +74,8 @@ body {
 #wrapper {
 	position: absolute;
 	z-index: 1;
-	top: 45px;
-	bottom: 48px;
+	top: 0px;
+	bottom: 0px;
 	left: 0;
 	width: 100%;
 	background: #ccc;
@@ -110,7 +110,7 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
 	text-align: center;
 }
@@ -118,7 +118,7 @@ body {
 #scroller li {
 	display: block;
 	float: left;
-	width: 100px;
+	width: 100%;
 	height: 100%;
 	border-right: 1px solid #ccc;
 	background-color: #fafafa;
@@ -128,12 +128,15 @@ body {
 </style>
 </head>
 <body onload="loaded()">
-<div id="header">iScroll</div>
+<!--<div id="header">iScroll</div>-->
 
 <div id="wrapper">
 	<div id="scroller">
 		<ul>
-			<li>Cell 1</li>
+			<li><div style="background-color: #CD23de; width: 200px; float: right; margin-left: 30px">Celda 1</div>
+				<div style="background-color: #CD23de; width: 200px">Celda 1</div>
+				<div style="background-color: #CD23de; width: 200px">Celda 1</div>
+				<div style="background-color: #CD23de; width: 200px">Celda 1</div> 1</li>
 			<li>Cell 2</li>
 			<li>Cell 3</li>
 			<li>Cell 4</li>
@@ -187,7 +190,7 @@ body {
 	</div>
 </div>
 
-<div id="footer"></div>
+<!--<div id="footer"></div>-->
 
 </body>
 </html>
